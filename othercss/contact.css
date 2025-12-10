@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #292929;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: end;
+    width: 95%;
+}
+.fa-bars{ 
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 35px;
+    background-color: #383838;
+}
+
+.drop{
+    position: relative;
+}
+.menu-dropdown{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    padding: 10px;
+    line-height: 40px;
+    background-color: #383838;
+    top: 0px;
+    left: -200px;
+    display: none;
+   
+}
+
+.menu-dropdown li a{
+    color: white;
+    font-size: 1.2em;
+}
+
+.drop:hover .menu-dropdown{
+    display: block;
+}
+.menu-dropdown li a:hover{
+    color: #F7941D; 
+    border-left: 2px solid #F7941D;
+    text-align: start;
+}
+
+.orlando-logo{
+    display: flex;
+    text-align: left;
+}
+
+.get{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    background-color: #292929;
+}
+
+.wrapper{
+    width: 90%;
+    height: 100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+   
+}
+
+.innerbox{
+    width: 30%;
+    height: 100px;
+    left: 1px;
+    background-color: #383838;
+    gap: 3em;
+}
+
+
+
+.circle{
+    margin:-40px auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF5722;
+
+}
+
+.fa-phone{
+    color: white;
+    /* position: absolute; */
+    align-items: center;
+    top: 25px;
+    left: 25px;
+}
+.number{
+    color: white;
+    /* position: absolute; */
+    margin-top: 6em;
+    font-size: 11px;
+    
+
+}
+
+.mail{
+    /* position: absolute; */
+    color: white;
+    top: 80px;
+    left: -90px;
+}
+
+.fa-envelope{
+    color: white;
+    /* position: absolute; */
+    top: 25px;
+    left: 24px;
+}
+
+.fa-location-dot{
+    /* position: absolute; */
+    color: white;
+    top: 25px;
+    left: 25px;
+}
+.location{
+    /* position: absolute; */
+    color: white;
+    font-size: 20px;
+    margin-top: 3.5em;
+}
+
+
+/* form */
+
+.cards-holder a{
+    text-decoration: none;
+}
+.contact-contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 70px auto;
+}
+
+.text-component h1, p{
+    color: white;
+    width: 100%;
+     text-align: left;
+     padding: 10px;
+     line-height: 30px;
+     font-size: larger;
+    font-weight: 500px;
+
+}
+
+.text-component {
+    align-items: start;
+    margin-bottom: 120px;
+    text-align: left;
+}
+.btn{
+    padding: 20px 35px;
+    background-color: #FF5722;
+}
+.btn a{
+    color: white;
+    font-weight: bold;
+}  
+
+hr{
+    margin: auto;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 1cm;
+    margin-top: 10px;
+    
+}
+
+.footer-links a{
+    color: white;
+}
+
+/* Responsiveness */
+
+
+@media (max-width:1440px) {
+    body{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+/* @media (max-width:425px) {
+    .get{
+        text-align: center;
+        flex-direction: column;
+        font-size: 30px;
+    }   
+} */
+@media (max-width:1024) {
+    body{
+        flex-direction: column;
+        width: 80%;
+    }
+    
+}

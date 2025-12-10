@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 20px; 
+}
+.fa-bars{
+    color: white;
+    font-size: 40px ;
+    border: 2px solid rgba(0, 0, 0, 0.393);
+    padding: 5px;
+    background-color: rgb(94, 90, 90);
+    border: none;
+}
+.drop{
+    position: relative;
+}
+.menu-dropdown{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    padding: 10px;
+    line-height: 40px;
+    background-color: #383838;
+    left: -200px;
+    display: none;
+}
+.drop:hover .menu-dropdown{
+    display: block;
+}
+.menu-dropdown li a{
+    color: white;
+    font-size: 1.2em;
+}
+.menu-dropdown li a:hover{
+    color: #F7941D; 
+    border-left: 2px solid #F7941D;
+}
+
+.section1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.486)),  url("./images/Portfolio\ backgroung\ image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.herosect{
+    text-align: center;
+    margin-top: 10em;
+}
+
+
+
+.herosect h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+  
+}
+.herosect h1{
+    font-size: 90px;
+    color: white;
+}
+.herosect p{
+    color: white;
+}
+
+.lower-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.lower-side{
+    font-weight: 400;
+    font-size: 20px;
+    width: 80%;
+}
+
+.herosect-btn{
+    padding: 20px 30px; 
+    border-radius: 15px;
+    border: none;
+    background-color: #F7941D;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 2px;
+    margin-top: 20px;
+}
+
+.herosect-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.herosect h1{
+    gap: 0.1em;
+    
+}
+ .lower-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.lower-side p{
+    color: white;
+    font-weight: 400;
+    margin-top: 100px;
+}
+ .lower-side ul li a{
+        color: white;
+        display: flex;
+        text-decoration: none;
+    }
+ 
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    list-style-type: none; 
+    margin-top: 150px;
+}
+
+.socials :hover{
+    color: #FF5722;
+}
+/* body-madia-query */
+
+@media(max-width:700px){
+    .herosect h1{
+        font-size: 2em;
+    }
+}
+/* 
+@media (max-width:552px) {
+.
+    
+} */
+
+@media(max-width: 544px){
+    .lower-side{
+        display: none;
+    }
+    .herosect{
+        margin-top: 4em;
+    }
+}
